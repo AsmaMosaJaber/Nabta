@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-image: linear-gradient(rgba(21, 43, 5, 0.9), rgba(137, 165, 141, 0.897)), url(IMG/flower-3416140_640.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2% 8%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0;
+    margin-bottom: 16%;
+
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20%;
+    gap: 60px; /* Add gap between cards */
+}
+
+.col {
+    flex: 1;
+    margin: 1% 0;
+    padding: 0 1%;
+}
+
+h1 {
+    color: #c2c03d;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow:5px 10px 5px #0e0f03;
+}
+
+h2 {
+    color:  #c2c03d;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    text-shadow: 10px 5px 10px #075a2a;
+    text-decoration-color: aliceblue;
+    text-decoration-style: double;
+
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+button {
+    width: 80px;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px 0;
+    background: #f5f7b1;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.1s;
+    position: absolute;
+    right: 10%;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 20px 25px;
+    cursor: pointer;
+    margin: 10px 50px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.BIGPIC {
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    }
+    
+    .BIGPIC:hover {
+        transform: translateX(10px) rotate(360deg);
+      }
+.card1 {
+    background-image: url(IMG/sunset-815270__340.jpg);
+    border-bottom-style: ridge;
+}
+
+.card2 {
+    background-image:url(IMG/butterflies-1127666__340.jpg);
+    border-bottom-style: ridge;
+}
+
+.card3 {
+    background-image: url(IMG/sunflower-3113318__340.jpg);
+    border-bottom-style: ridge;
+   
+}
+
+h3 {
+    color: #043d1a;
+    font-weight: normal;
+    text-decoration: dashed;
+    text-shadow: 10px 5px 10px #075a2a;
+    text-decoration-style: dotted;
+    transition: all 0.2s ease-in-out;
+}
+
+h3:hover {
+    font-weight: bold;
+    transform: translateX(5px);
+}
+
+.card p {
+    font-size: 12px;
+    padding: 5px 0;
+    text-shadow: 4 4 5px #000;
+        font-size: 15px;
+        color: rgb(2, 0, 0);
+        font-weight: bold;
+
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    text-align: justify;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('IMG/flower-729514__340.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+  .navbar .menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .menu-list li {
+    margin: 0 10px;
+  }
+  
+  .navbar .menu-list li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar .menu-list li a:hover {
+    color: #ff9900;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    background-color: #558557;
+    padding: 12px 16px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(235, 231, 231, 0.2);
+   text-align: left;
+}
+.dropdown-menu {
+    display: none;
+  }
